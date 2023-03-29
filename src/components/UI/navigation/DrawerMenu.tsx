@@ -17,8 +17,9 @@ export default function DrawerMenu(
             HODIE
           </div>
           <ul className="">
-            {LSMItems.map((menuitem) => (
+            {LSMItems.map((menuitem, index) => (
               <DrawerItem
+                key={index}
                 title={menuitem.title}
                 icon={menuitem.icon}
                 link={menuitem.link}

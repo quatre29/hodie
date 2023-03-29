@@ -11,6 +11,7 @@ const Tabs = () => {
       <div className="tabs mb-5">
         {tabs.map((tab, index) => (
           <a
+            key={index}
             className={`tab-lifted tab ${
               selectedTab === index && "tab-active"
             }`}
