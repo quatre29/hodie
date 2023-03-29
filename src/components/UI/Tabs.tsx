@@ -13,7 +13,7 @@ const Tabs = () => {
           <a
             key={index}
             className={`tab-lifted tab ${
-              selectedTab === index && "tab-active"
+              selectedTab === index ? "tab-active" : ""
             }`}
             onClick={() => setSelectedTab(index)}
           >
