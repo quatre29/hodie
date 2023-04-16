@@ -1,5 +1,5 @@
 import React from "react";
-import { DateObj } from "~/helpers/calendar";
+import type { DateObj } from "~/helpers/calendar";
 
 interface DayProps {
   date: DateObj;

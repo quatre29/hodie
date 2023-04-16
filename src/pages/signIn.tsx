@@ -37,7 +37,7 @@ const SignIn: NextPage = () => {
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which don't look even
               slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn't anything embarrassing hidd
+              Ipsum, you need to be sure there isn't anything emb
             </p>
             <div className="card-actions mt-20 justify-center">
               <button

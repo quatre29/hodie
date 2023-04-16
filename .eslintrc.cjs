@@ -22,6 +22,8 @@ const config = {
   extends: ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
   rules: {
     "@typescript-eslint/ban-ts-comment:" : 'off',
+    "@typescript-eslint/no-non-null-assertion": 'off',
+    "@typescript-eslint/restrict-template-expressions": 'off',
     "@next/next/no-img-element": 'off',
     "@typescript-eslint/consistent-type-imports": [
       "warn",

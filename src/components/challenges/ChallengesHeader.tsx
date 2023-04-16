@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const ChallengesHeader = () => {
@@ -12,6 +11,7 @@ const ChallengesHeader = () => {
       <div className="hero-overlay "></div>
       <div className="hero-content flex-col px-20 text-neutral-content lg:flex-row-reverse ">
         <img
+          alt="Challenges header image"
           src="https://media.istockphoto.com/id/1422275164/photo/teenage-girl-in-orange-hoody-balancing-high-on-wooden-pile.jpg?s=612x612&w=0&k=20&c=-jL6JyDR2Sokk-iEA0KXQfYVFUkjnWAUUYX7g121io8="
           className="max-w-xs rounded-lg shadow-2xl"
         />

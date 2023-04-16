@@ -38,7 +38,7 @@ export default function Navbar(): JSX.Element {
         <div className="dropdown-end dropdown">
           <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
             <div className="w-10 rounded-full">
-              <img src={sessionData?.user.image!} />
+              <img alt="user avatar" src={sessionData?.user.image || ""} />
             </div>
           </label>
           <ul
