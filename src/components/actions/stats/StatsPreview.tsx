@@ -1,6 +1,5 @@
 import React from "react";
 import TopStats from "./TopStats";
-import RadarStats from "./RadarStats";
 import Tabs from "~/components/UI/Tabs";
 
 const StatsPreview = () => {

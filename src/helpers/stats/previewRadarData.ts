@@ -1,5 +1,5 @@
-import { BubbleDataPoint, ChartData } from "chart.js";
-import { Point } from "chart.js/dist/helpers/helpers.canvas";
+import type { BubbleDataPoint, ChartData } from "chart.js";
+import type { Point } from "chart.js/dist/helpers/helpers.canvas";
 
 type ChartType = ChartData<
   "radar",

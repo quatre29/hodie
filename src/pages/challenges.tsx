@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import React from "react";
 import ChallengeCard from "~/components/challenges/ChallengeCard";
 import ChallengesHeader from "~/components/challenges/ChallengesHeader";

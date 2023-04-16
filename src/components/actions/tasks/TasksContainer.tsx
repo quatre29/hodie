@@ -63,8 +63,8 @@ const TasksContainer = () => {
         <div className="card-body items-center text-center">
           <h2 className="card-title">Tasks</h2>
           <div className="max-h-80 overflow-y-auto">
-            {TEMP_TASKS.map((task) => (
-              <TaskItem task={task} />
+            {TEMP_TASKS.map((task, index) => (
+              <TaskItem key={index} task={task} />
             ))}
           </div>
         </div>

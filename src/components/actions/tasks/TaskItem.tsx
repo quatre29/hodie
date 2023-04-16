@@ -1,6 +1,6 @@
 import React from "react";
-import { TaskItemType } from "./TasksContainer";
-import { XMarkIcon, XCircleIcon, ClockIcon } from "@heroicons/react/24/solid";
+import type { TaskItemType } from "./TasksContainer";
+import { XMarkIcon } from "@heroicons/react/24/solid";
 
 interface TaskItemProps {
   task: TaskItemType;
