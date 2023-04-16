@@ -8,7 +8,7 @@ const CalendarBar = () => {
   );
 
   return (
-    <div className="flex items-center justify-center divide-x-0 overflow-scroll py-5">
+    <div className="card glass mt-20 flex flex-row items-center justify-center divide-x-0 overflow-scroll py-5 shadow-xl">
       {calendarDates.map((date) => (
         <Day date={date} />
       ))}

@@ -8,7 +8,7 @@ interface DayProps {
 const Day = ({ date }: DayProps) => {
   return (
     <div
-      className={`flex flex-col items-center justify-center p-2 px-3 ${
+      className={`z-10 flex flex-col items-center justify-center p-2 px-3 ${
         date.isToday && "rounded-full border-2 border-red-500"
       }`}
     >

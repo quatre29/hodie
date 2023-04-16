@@ -1,12 +1,15 @@
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import { signOut, useSession } from "next-auth/react";
 
 export default function Navbar(): JSX.Element {
+  const { data: sessionData } = useSession();
+
   return (
-    <div className="navbar bg-base-100 bg-opacity-90 px-8">
+    <div className="navbar bg-base-100 px-8">
       <div className="flex-1">
         <label
           htmlFor="my-drawer"
-          className="drawer-button btn-ghost btn text-xl normal-case"
+          className="btn-ghost drawer-button btn text-xl normal-case"
         >
           <Bars3Icon className=" h-10" />
         </label>
@@ -35,7 +38,7 @@ export default function Navbar(): JSX.Element {
         <div className="dropdown-end dropdown">
           <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
             <div className="w-10 rounded-full">
-              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <img src={sessionData?.user.image!} />
             </div>
           </label>
           <ul
@@ -52,7 +55,7 @@ export default function Navbar(): JSX.Element {
               <a>Settings</a>
             </li>
             <li>
-              <a>Logout</a>
+              <a onClick={() => void signOut()}>Logout</a>
             </li>
           </ul>
         </div>

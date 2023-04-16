@@ -10,6 +10,11 @@ export const LSMItems = [
     link: "/challenges",
   },
   {
+    icon: "📍",
+    title: "Path",
+    link: "/path",
+  },
+  {
     icon: "📊",
     title: "Stats",
     link: "/stats",
