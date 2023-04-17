@@ -21,10 +21,10 @@ const config = {
   plugins: ["@typescript-eslint"],
   extends: ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
   rules: {
-    "@typescript-eslint/ban-ts-comment:" : 'off',
     "@typescript-eslint/no-non-null-assertion": 'off',
     "@typescript-eslint/restrict-template-expressions": 'off',
     "@next/next/no-img-element": 'off',
+    "react/no-unescaped-entities": 'off',
     "@typescript-eslint/consistent-type-imports": [
       "warn",
       {
@@ -32,7 +32,7 @@ const config = {
         fixStyle: "inline-type-imports",
       },
     ],
-    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_", varsIgnorePattern: '^_' }],
   },
 };
 
